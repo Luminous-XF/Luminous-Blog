@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="in"
-                  name="Instance Name"
+                  name="Luminous の 部落格"
                   start-page="starter.md">
 
     <toc-element topic="starter.md"/>
@@ -11,10 +11,12 @@
 
     <toc-element toc-title="Golang">
         <toc-element toc-title="Golang 基础">
-            <toc-element topic="Golang基础-简介.md"/>
+            <toc-element topic="Golang-Golang基础-简介.md"/>
 
-            <toc-element topic="Golang基础-注释.md"/>
-
+            <toc-element toc-title="基础语法">
+                <toc-element topic="Golang-Golang基础-基础语法-包.md"/>
+                <toc-element topic="Golang-Golang基础-基础语法-注释.md"/>
+            </toc-element>
         </toc-element>
     </toc-element>
 
