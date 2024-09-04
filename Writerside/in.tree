@@ -16,6 +16,7 @@
             <toc-element toc-title="基础语法">
                 <toc-element topic="Golang-Golang基础-基础语法-包.md"/>
                 <toc-element topic="Golang-Golang基础-基础语法-注释.md"/>
+                <toc-element topic="Golang-Golang基础-常量.md"/>
             </toc-element>
 
             <toc-element topic="Golang-Golang基础-数据类型.md"/>
