@@ -30,11 +30,13 @@
             <toc-element toc-title="LeetCode">
                 <toc-element topic="ACM-题解-LeetCode-2708.md"/>
                 <toc-element topic="ACM-题解-LeetCode-2860.md"/>
+                <toc-element topic="ACM-题解-LeetCode-3174.md"/>
             </toc-element>
         </toc-element>
 
         <toc-element toc-title="分类题单">
             <toc-element topic="ACM-分类题单-枚举.md"/>
+            <toc-element topic="ACM-分类题单-数据结构.md"/>
             <toc-element topic="ACM-分类题单-动态规划.md"/>
         </toc-element>
     </toc-element>
