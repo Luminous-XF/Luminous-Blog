@@ -2,4 +2,4 @@
 
 | 题目                                                           | 类型 | 难度 | 状态 | 题解                                  | 备注 |
 |--------------------------------------------------------------|----|----|----|-------------------------------------|----|
-| [LeetCode 2860](https://leetcode.cn/problems/happy-students) | 枚举 | 简单 | ✅  | [Solution](../题解/ACM-题解-LeetCode-2860.md) | -  |
+| [LeetCode 2860](https://leetcode.cn/problems/happy-students) | 枚举 | 简单 | ✅  | [Solution](ACM-题解-LeetCode-2860.md) | -  |
