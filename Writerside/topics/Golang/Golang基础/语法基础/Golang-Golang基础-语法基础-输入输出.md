@@ -111,7 +111,7 @@ func main() {
 }
 ```
 
-![Golang-Golang基础-输入输出-Scan示例.png](Golang-Golang基础-输入输出-Scan示例.png)
+![Golang-Golang基础-输入输出-Scan示例.png](Golang-Golang基础-语法基础-输入输出-Scan示例.png)
 
 
 2. ```fmt.Scanln```
@@ -127,7 +127,7 @@ func main() {
 }
 ```
 
-![Golang-Golang基础-输入输出-Scanln示例.png](Golang-Golang基础-输入输出-Scanln示例.png)
+![Golang-Golang基础-输入输出-Scanln示例.png](Golang-Golang基础-语法基础-输入输出-Scanln示例.png)
 
 
 3. ```fmt.Scanf```
@@ -143,7 +143,7 @@ func main() {
 }
 ```
 
-![Golang-Golang基础-输入输出-Scanf示例.png](Golang-Golang基础-输入输出-Scanf示例.png)
+![Golang-Golang基础-输入输出-Scanf示例.png](Golang-Golang基础-语法基础-输入输出-Scanf示例.png)
 
 <br/>
 <br/>
@@ -167,7 +167,7 @@ func main() {
     fmt.Println(scanner.Text())
 }
 ```
-![Golang-Golang基础-输入输出-bufio输入.png](Golang-Golang基础-输入输出-bufio输入.png)
+![Golang-Golang基础-输入输出-bufio输入.png](Golang-Golang基础-语法基础-输入输出-bufio输入.png)
 
 **输出**
 
@@ -188,4 +188,4 @@ func main() {
 }
 ```
 
-![Golang-Golang基础-输入输出-bufio输出.png](Golang-Golang基础-输入输出-bufio输出.png)
+![Golang-Golang基础-输入输出-bufio输出.png](Golang-Golang基础-语法基础-输入输出-bufio输出.png)

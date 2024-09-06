@@ -11,17 +11,17 @@
 
     <toc-element toc-title="Golang">
         <toc-element toc-title="Golang 基础">
-            <toc-element topic="Golang-Golang基础-简介.md"/>
+            <toc-element topic="Golang-Golang基础-语法基础-简介.md"/>
 
-            <toc-element toc-title="基础语法">
-                <toc-element topic="Golang-Golang基础-基础语法-包.md"/>
-                <toc-element topic="Golang-Golang基础-基础语法-注释.md"/>
+            <toc-element toc-title="基本语法">
+                <toc-element topic="Golang-Golang基础-语法基础-基本语法-包.md"/>
+                <toc-element topic="Golang-Golang基础-语法基础-基本语法-注释.md"/>
             </toc-element>
-            <toc-element topic="Golang-Golang基础-数据类型.md"/>
-            <toc-element topic="Golang-Golang基础-常量.md"/>
-            <toc-element topic="Golang-Golang基础-变量.md"/>
-            <toc-element topic="Golang-Golang基础-输入输出.md"/>
-            <toc-element topic="Golang-Golang基础-条件控制.md"/>
+            <toc-element topic="Golang-Golang基础-语法基础-数据类型.md"/>
+            <toc-element topic="Golang-Golang基础-语法基础-常量.md"/>
+            <toc-element topic="Golang-Golang基础-语法基础-变量.md"/>
+            <toc-element topic="Golang-Golang基础-语法基础-输入输出.md"/>
+            <toc-element topic="Golang-Golang基础-语法基础-条件控制.md"/>
         </toc-element>
     </toc-element>
 

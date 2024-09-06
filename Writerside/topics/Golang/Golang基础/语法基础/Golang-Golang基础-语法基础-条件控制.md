@@ -159,7 +159,7 @@ func main() {
 }
 ```
 
-![Golang-Golang基础-条件控制-switch-fallthrough示例.png](Golang-Golang基础-条件控制-switch-fallthrough示例.png)
+![Golang-Golang基础-条件控制-switch-fallthrough示例.png](Golang-Golang基础-语法基础-条件控制-switch-fallthrough示例.png)
 
 
 <br/>
@@ -217,6 +217,6 @@ A:
 }
 ```
 
-![Golang-Golang基础-条件控制-goto示例.png](Golang-Golang基础-条件控制-goto示例.png)
+![Golang-Golang基础-条件控制-goto示例.png](Golang-Golang基础-语法基础-条件控制-goto示例.png)
 
 在实际应用中 ```goto``` 用的很少，一方面会降低代码的可读性，另一方面存在性能消耗。

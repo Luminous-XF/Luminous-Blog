@@ -87,12 +87,12 @@ func main() {
 在 Go 中禁止包循环导入（不管是直接的还是间接的），存在循环导入的话将无法通过编译。
 
 例如包A中导入了包B，包B中也导入了包A，这种属于直接循环导入。
-![Golang-Golang基础-基础语法-包-直接循环导入.png](Golang-Golang基础-基础语法-包-直接循环导入.png){ style="auto" }
+![Golang-Golang基础-基础语法-包-直接循环导入.png](Golang-Golang基础-语法基础-基础语法-包-直接循环导入.png){ style="auto" }
 
 <br/>
 
 包A中导入了包C，包C导入了包B，包B又导入了包A，这就是间接的循环导入。
-![Golang-Golang基础-基础语法-包-间接循环导入.png](Golang-Golang基础-基础语法-包-间接循环导入.png)
+![Golang-Golang基础-基础语法-包-间接循环导入.png](Golang-Golang基础-语法基础-基本语法-包-间接循环导入.png)
 
 
 <br/>
