@@ -658,13 +658,11 @@ import "fmt"
 
 func main() {
     arr1 := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-    fmt.Printf("len=%d, cap=%d, arr1=%v\n",
-              len(arr1), cap(arr1), arr1)
+    fmt.Printf("len=%d, cap=%d, arr1=%v\n", len(arr1), cap(arr1), arr1)
 
     low, high := 3, 7
     arr2 := arr1[low:high]
-    fmt.Printf("len=%d, cap=%d, arr1=%v\n", 
-              len(arr2), cap(arr2), arr2)
+    fmt.Printf("len=%d, cap=%d, arr1=%v\n", len(arr2), cap(arr2), arr2)
 }
 ```
 
@@ -680,19 +678,15 @@ import "fmt"
 
 func main() {
     arr1 := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-    fmt.Printf("len=%d, cap=%d, arr1=%v\n", 
-              len(arr1), cap(arr1), arr1)
+    fmt.Printf("len=%d, cap=%d, arr1=%v\n", len(arr1), cap(arr1), arr1)
 
     low, high := 3, 7
     arr2 := arr1[low:high]
-    fmt.Printf("len=%d, cap=%d, arr1=%v\n\n",
-              len(arr2), cap(arr2), arr2)
+    fmt.Printf("len=%d, cap=%d, arr1=%v\n\n", len(arr2), cap(arr2), arr2)
 
     arr2 = append(arr2, 100)
-    fmt.Printf("len=%d, cap=%d, arr1=%v\n", 
-              len(arr1), cap(arr1), arr1)
-    fmt.Printf("len=%d, cap=%d, arr1=%v\n",
-              len(arr2), cap(arr2), arr2)
+    fmt.Printf("len=%d, cap=%d, arr1=%v\n", len(arr1), cap(arr1), arr1)
+    fmt.Printf("len=%d, cap=%d, arr1=%v\n", len(arr2), cap(arr2), arr2)
 }
 ```
 
@@ -707,19 +701,15 @@ import "fmt"
 
 func main() {
     arr1 := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-    fmt.Printf("len=%d, cap=%d, arr1=%v\n",
-              len(arr1), cap(arr1), arr1)
+    fmt.Printf("len=%d, cap=%d, arr1=%v\n", len(arr1), cap(arr1), arr1)
 
     low, high := 3, 7
     arr2 := arr1[low:high:7]
-    fmt.Printf("len=%d, cap=%d, arr1=%v\n\n", 
-               len(arr2), cap(arr2), arr2)
+    fmt.Printf("len=%d, cap=%d, arr1=%v\n\n", len(arr2), cap(arr2), arr2)
 
     arr2 = append(arr2, 100)
-    fmt.Printf("len=%d, cap=%d, arr1=%v\n", 
-              len(arr1), cap(arr1), arr1)
-    fmt.Printf("len=%d, cap=%d, arr1=%v\n", 
-              len(arr2), cap(arr2), arr2)
+    fmt.Printf("len=%d, cap=%d, arr1=%v\n", len(arr1), cap(arr1), arr1)
+    fmt.Printf("len=%d, cap=%d, arr1=%v\n", len(arr2), cap(arr2), arr2)
 }
 ```
 
