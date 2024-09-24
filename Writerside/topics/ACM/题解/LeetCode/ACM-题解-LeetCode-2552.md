@@ -19,7 +19,7 @@
 <br/>
 空间复杂度: $O(n)$
 
-```Go
+```C++
 class Solution {
 public:
     long long countQuadruplets(vector<int>& nums) {
