@@ -38,11 +38,13 @@
     <toc-element toc-title="ACM">
         <toc-element toc-title="题解">
             <toc-element toc-title="LeetCode">
+                <toc-element topic="ACM-题解-LeetCode-17.md"/>
                 <toc-element topic="ACM-题解-LeetCode-36.md"/>
                 <toc-element topic="ACM-题解-LeetCode-1014.md"/>
                 <toc-element topic="ACM-题解-LeetCode-2181.md"/>
                 <toc-element topic="ACM-题解-LeetCode-2207.md"/>
                 <toc-element topic="ACM-题解-LeetCode-2306.md"/>
+                <toc-element topic="ACM-题解-LeetCode-2535.md"/>
                 <toc-element topic="ACM-题解-LeetCode-2552.md"/>
                 <toc-element topic="ACM-题解-LeetCode-2576.md"/>
                 <toc-element topic="ACM-题解-LeetCode-2708.md"/>
@@ -54,7 +56,9 @@
 
         <toc-element toc-title="分类题单">
             <toc-element topic="ACM-分类题单-枚举.md"/>
+            <toc-element topic="ACM-分类题单-模拟.md"/>
             <toc-element topic="ACM-分类题单-双指针.md"/>
+            <toc-element topic="ACM-分类题单-搜索.md"/>
             <toc-element topic="ACM-分类题单-哈希.md"/>
             <toc-element topic="ACM-分类题单-数据结构.md"/>
             <toc-element topic="ACM-分类题单-动态规划.md"/>
