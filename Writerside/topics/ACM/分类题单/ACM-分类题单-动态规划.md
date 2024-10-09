@@ -6,4 +6,5 @@
 |---------------------------------------------------------------------------|-------|----|----|-------------------------------------|----|
 | [LeetCode 2708](https://leetcode.cn/problems/maximum-strength-of-a-group) | 线性 DP | 简单 | ✅  | [Solution](ACM-题解-LeetCode-2708.md) | -  |
 | [LeetCode 1014](https://leetcode.cn/problems/best-sightseeing-pair)       | 线性 DP | 简单 | ✅  | [Solution](ACM-题解-LeetCode-1014.md) | -  |
+| [LeetCode 64](https://leetcode.cn/problems/minimum-path-sum)              | DP    | 简单 | ✅  | [Solution](ACM-题解-LeetCode-64.md)   | -  |
 
