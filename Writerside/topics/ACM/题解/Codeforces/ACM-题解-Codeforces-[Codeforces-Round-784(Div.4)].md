@@ -29,7 +29,6 @@ Codeforces 根据用户的评级将其分为 $4$ 个分区：
 #pragma GCC optimize(3)
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
 #define endl "\n"
@@ -85,7 +84,6 @@ int main() {
 //
 
 #pragma GCC optimize(3)
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -178,7 +176,6 @@ int main() {
 #pragma GCC optimize(3)
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
 #define endl "\n"
@@ -267,7 +264,6 @@ int main() {
 #pragma GCC optimize(3)
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
 #define endl "\n"
@@ -356,7 +352,6 @@ $\sum_{c = 'a'}^{'k'} book1[s_{i0}][c] ~ \mathrm{(c \neq s_{i1})} + \sum_{c = 'a
 #pragma GCC optimize(3)
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
 #define endl "\n"
@@ -436,7 +431,6 @@ int main() {
 #pragma GCC optimize(3)
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
 #define endl "\n"
@@ -520,7 +514,6 @@ int main() {
 #pragma GCC optimize(3)
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
 #define endl "\n"
@@ -617,7 +610,6 @@ int main() {
 #pragma GCC optimize(3)
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
 #define endl "\n"
