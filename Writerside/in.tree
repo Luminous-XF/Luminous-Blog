@@ -57,6 +57,10 @@
                 <toc-element topic="ACM-题解-LeetCode-2860.md"/>
                 <toc-element topic="ACM-题解-LeetCode-3174.md"/>
             </toc-element>
+
+            <toc-element toc-title="Codeforces">
+                <toc-element topic="ACM-题解-Codeforces-[Codeforces-Round-640(Div.4)].md"/>
+            </toc-element>
         </toc-element>
 
         <toc-element toc-title="分类题单">
