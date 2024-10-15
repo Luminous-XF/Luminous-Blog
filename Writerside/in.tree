@@ -63,6 +63,10 @@
                 <toc-element topic="ACM-题解-Codeforces-[Codeforces-Round-784(Div.4)].md"/>
                 <toc-element topic="ACM-题解-Codeforces-[Codeforces-Round-790(Div.4)].md"/>
             </toc-element>
+
+            <toc-element toc-title="UVA">
+                <toc-element topic="ACM-题解-UVA-10170.md"/>
+            </toc-element>
         </toc-element>
 
         <toc-element toc-title="分类题单">
