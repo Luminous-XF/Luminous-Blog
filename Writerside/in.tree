@@ -59,24 +59,41 @@
             </toc-element>
 
             <toc-element toc-title="Codeforces">
-                <toc-element topic="ACM-题解-Codeforces-[Codeforces-Round-640(Div.4)].md"/>
-                <toc-element topic="ACM-题解-Codeforces-[Codeforces-Round-784(Div.4)].md"/>
-                <toc-element topic="ACM-题解-Codeforces-[Codeforces-Round-790(Div.4)].md"/>
+                <toc-element topic="ACM-Solution-Codeforces-[Codeforces-Round-640(Div.4)].md"/>
+                <toc-element topic="ACM-Solution-Codeforces-[Codeforces-Round-784(Div.4)].md"/>
+                <toc-element topic="ACM-Solution-Codeforces-[Codeforces-Round-790(Div.4)].md"/>
             </toc-element>
 
             <toc-element toc-title="UVA">
-                <toc-element topic="ACM-题解-UVA-10170.md"/>
+                <toc-element toc-title="Volume 1 (100-199)">
+                    <toc-element topic="ACM-Solution-UVA-123.md"/>
+                </toc-element>
+
+                <toc-element toc-title="Volume 3 (300-399)">
+                    <toc-element topic="ACM-Solution-UVA-358.md"/>
+                </toc-element>
+
+                <toc-element toc-title="Volume 101 (10100-10199)">
+                    <toc-element topic="ACM-Solution-UVA-10170.md"/>
+                </toc-element>
+
+
+                <toc-element toc-title="Volume 103 (10300-10399)">
+                    <toc-element topic="ACM-Solution-UVA-10341.md"/>
+                </toc-element>
+            </toc-element>
+
+            <toc-element toc-title="HDU">
+                <toc-element topic="ACM-Solution-HDU-5120.md"/>
             </toc-element>
         </toc-element>
 
-        <toc-element toc-title="分类题单">
-            <toc-element topic="ACM-分类题单-枚举.md"/>
-            <toc-element topic="ACM-分类题单-模拟.md"/>
-            <toc-element topic="ACM-分类题单-双指针.md"/>
-            <toc-element topic="ACM-分类题单-搜索.md"/>
-            <toc-element topic="ACM-分类题单-哈希.md"/>
-            <toc-element topic="ACM-分类题单-数据结构.md"/>
-            <toc-element topic="ACM-分类题单-动态规划.md"/>
+        <toc-element toc-title="算法">
+            <toc-element toc-title="几何">
+                <toc-element toc-title="几何 2D">
+                    <toc-element topic="ACM-Algorithm-几何-2D-两圆相交.md"/>
+                </toc-element>
+            </toc-element>
         </toc-element>
     </toc-element>
 
