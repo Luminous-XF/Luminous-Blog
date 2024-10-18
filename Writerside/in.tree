@@ -93,6 +93,7 @@
 
             <toc-element toc-title="POJ">
                 <toc-element topic="ACM-Solution-POJ-1064.md"/>
+                <toc-element topic="ACM-Solution-POJ-2456.md"/>
             </toc-element>
         </toc-element>
 
