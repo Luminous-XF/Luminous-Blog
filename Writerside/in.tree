@@ -90,6 +90,10 @@
                     <toc-element topic="ACM-Solution-UVA-10474.md"/>
                 </toc-element>
 
+                <toc-element toc-title="Volume 118 (11800-11899)">
+                    <toc-element topic="ACM-Solution-UVA-11881.md"/>
+                </toc-element>
+
                 <toc-element toc-title="Volume 120 (12000-12099)">
                     <toc-element topic="ACM-Solution-UVA-12032.md"/>
                 </toc-element>
