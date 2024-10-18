@@ -1,6 +1,6 @@
 # POJ 1064 - Cable master
 
-## 原题地址
+## 🚀 原题地址
 
 [POJ 1064 - Cable master](http://poj.org/problem?id=1064)
 

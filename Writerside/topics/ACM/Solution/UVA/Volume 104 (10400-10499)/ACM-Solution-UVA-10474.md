@@ -1,6 +1,6 @@
 # UVA 10474 - Where is the Marble?
 
-## 原题地址
+## 🚀 原题地址
 
 [UVA 10474 - Where is the Marble?](https://onlinejudge.org/external/104/10474.pdf)
 

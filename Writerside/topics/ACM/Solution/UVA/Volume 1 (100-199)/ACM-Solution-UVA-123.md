@@ -1,6 +1,6 @@
 # UVA 123 - Searching Quickly
 
-## 原题地址
+## 🚀 原题地址
 
 [UVA 123 - Searching Quickly](https://onlinejudge.org/external/1/123.pdf)
 

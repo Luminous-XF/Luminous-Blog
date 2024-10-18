@@ -1,6 +1,6 @@
 # UVA 10341 - Solve It
 
-## 原题地址
+## 🚀 原题地址
 [UVA 10341 - Solve It](https://onlinejudge.org/external/103/10341.pdf)
 
 ## 🏷️ 题目类型

@@ -1,6 +1,6 @@
 # UVA 358 - Don't Have A Cow
 
-## 原题地址
+## 🚀 原题地址
 
 [UVA 358 - Don't Have A Cow](https://onlinejudge.org/external/3/358.pdf)
 

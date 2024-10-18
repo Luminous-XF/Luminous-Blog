@@ -1,6 +1,6 @@
 # UVA 12032 - The Monkey and the Oiled Bamboo
 
-## 原题地址
+## 🚀 原题地址
 
 [UVA 12032 - The Monkey and the Oiled Bamboo](https://onlinejudge.org/external/120/12032.pdf)
 
