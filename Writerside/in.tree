@@ -101,6 +101,10 @@
                 <toc-element toc-title="Volume 120 (12000-12099)">
                     <toc-element topic="ACM-Solution-UVA-12032.md"/>
                 </toc-element>
+
+                <toc-element toc-title="Volume 121 (12100-12199)">
+                    <toc-element topic="ACM-Solution-UVA-12190.md"/>
+                </toc-element>
             </toc-element>
 
             <toc-element toc-title="HDU">
