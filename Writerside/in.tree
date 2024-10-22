@@ -108,6 +108,7 @@
             </toc-element>
 
             <toc-element toc-title="HDU">
+                <toc-element topic="ACM-Solution-HDU-1029.md"/>
                 <toc-element topic="ACM-Solution-HDU-2072.md"/>
                 <toc-element topic="ACM-Solution-HDU-5120.md"/>
             </toc-element>
