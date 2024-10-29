@@ -59,9 +59,10 @@
             </toc-element>
 
             <toc-element toc-title="Codeforces">
-                <toc-element topic="ACM-Solution-Codeforces-[Codeforces-Round-640(Div.4)].md"/>
-                <toc-element topic="ACM-Solution-Codeforces-[Codeforces-Round-784(Div.4)].md"/>
+                <toc-element topic="ACM-Solution-Codeforces-[Codeforces-Round-981(Div.3)].md"/>
                 <toc-element topic="ACM-Solution-Codeforces-[Codeforces-Round-790(Div.4)].md"/>
+                <toc-element topic="ACM-Solution-Codeforces-[Codeforces-Round-784(Div.4)].md"/>
+                <toc-element topic="ACM-Solution-Codeforces-[Codeforces-Round-640(Div.4)].md"/>
             </toc-element>
 
             <toc-element toc-title="UVA">
