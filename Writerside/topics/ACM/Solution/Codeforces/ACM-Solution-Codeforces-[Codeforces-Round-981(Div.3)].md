@@ -659,3 +659,120 @@ int main() {
 ```
 
 <br/>
+
+## F. Kosuke's Sloth
+
+[原题地址](https://codeforces.com/contest/2033/problem/F)
+
+### 🏷️ 题目类型
+
+斐波那契数列、数论、打表
+
+### 📜 题目
+
+**题意**
+
+小介太懒了。他不会给您任何传说，只有任务：
+
+斐波那契数定义如下：
+
+- $f(1)=f(2)=1$。
+
+- $f(n)=f(n−1)+f(n−2)$ （$3≤n$）
+
+我们将 $G(n,k)$ 表示为第 $n$ 个可被 $k$ 整除的斐波那契数的索引。对于给定的 $n$ 和 $k$，计算 $G(n,k)$。
+
+由于这个数字可能太大，将其对 $10^{9} + 7$ 取模后输出。
+
+例如：$G(3,2)=9$ 因为第 $3$ 个可被 $2$ 整除的斐波那契数是 $34$ 。$[1,~1,~2,~3,~5,~8,~13,~21,~34]$ 。
+
+**输入**
+
+输入数据的第一行包含一个整数 $t$ ($1 \leq t \leq 10^{4}$) — 测试用例的数量。
+
+第一行也是唯一一行包含两个整数 $n$ 和 $k$ ($1 \leq n \leq 10^{18}, 1 \leq k \leq 10^{5}$) 。
+
+保证所有测试用例中 $k$ 的总和不超过 $10^{6}$ 。
+
+**输出**
+
+对于每个测试用例，输出唯一的数字：$G(n,k)$ 对 $10^{9} + 7$ 取模的值。
+
+**样例输入**
+
+```text
+3
+3 2
+100 1
+1000000000000 1377
+```
+
+**样例输出**
+
+```text
+9
+100
+999244007
+```
+
+### 🔍 分析
+
+通过打表可以发现数列中可以被 $k$ 整除的数是周期出现的，这个是[皮萨诺周期（Pisano Period）](https://en.m.wikipedia.org/wiki/Pisano_period)。
+所以可以暴力找到第一个可以被 $k$ 整除的斐波那契数所在的位置 $index$，则第 $n$ 个可以被 $k$ 整除的数所在的位置为 $p ~\cdot n$。
+
+### 💡 代码
+
+时间复杂度：$O(k)$
+
+```C++
+//
+// Created by Luminous on 2024/10/30.
+// https://codeforces.com/contest/2033/problem/F
+//
+
+#pragma GCC optimize(3)
+
+#include <bits/stdc++.h>
+using namespace std;
+
+#define endl "\n"
+
+
+const int MAX_N = 1e6 + 10;
+const long long MOD = 1e9 + 7;
+
+long long f[MAX_N];
+
+void solve() {
+    long long n, k;
+    cin >> n >> k;
+
+    f[1] = f[2] = 1;
+
+    int index = 0;
+    for (int i = 1; ; i++) {
+        f[i] = (i > 2 ? f[i - 2] + f[i - 1] : f[i]) % k;
+        if (f[i] % k == 0) {
+            index = i;
+            break;
+        }
+    }
+
+    cout << index % MOD * (n % MOD) % MOD << endl;
+}
+
+int main() {
+
+    ios::sync_with_stdio(false);
+
+    int T = 1;
+    cin >> T;
+    while (T-- > 0) {
+        solve();
+    }
+
+    return 0;
+}
+```
+
+<br/>
