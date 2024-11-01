@@ -37,27 +37,6 @@
 
     <toc-element toc-title="ACM">
         <toc-element toc-title="题解">
-            <toc-element toc-title="LeetCode">
-                <toc-element topic="ACM-题解-LeetCode-17.md"/>
-                <toc-element topic="ACM-题解-LeetCode-36.md"/>
-                <toc-element topic="ACM-题解-LeetCode-64.md"/>
-                <toc-element topic="ACM-题解-LeetCode-1014.md"/>
-                <toc-element topic="ACM-题解-LeetCode-1436.md"/>
-                <toc-element topic="ACM-题解-LeetCode-1845.md"/>
-                <toc-element topic="ACM-题解-LeetCode-2073.md"/>
-                <toc-element topic="ACM-题解-LeetCode-2181.md"/>
-                <toc-element topic="ACM-题解-LeetCode-2207.md"/>
-                <toc-element topic="ACM-题解-LeetCode-2306.md"/>
-                <toc-element topic="ACM-题解-LeetCode-2516.md"/>
-                <toc-element topic="ACM-题解-LeetCode-2535.md"/>
-                <toc-element topic="ACM-题解-LeetCode-2552.md"/>
-                <toc-element topic="ACM-题解-LeetCode-2576.md"/>
-                <toc-element topic="ACM-题解-LeetCode-2708.md"/>
-                <toc-element topic="ACM-题解-LeetCode-2856.md"/>
-                <toc-element topic="ACM-题解-LeetCode-2860.md"/>
-                <toc-element topic="ACM-题解-LeetCode-3174.md"/>
-            </toc-element>
-
             <toc-element toc-title="Codeforces">
                 <toc-element topic="ACM-Solution-Codeforces-[Codeforces-Round-981(Div.3)].md"/>
                 <toc-element topic="ACM-Solution-Codeforces-[Codeforces-Round-790(Div.4)].md"/>
@@ -69,7 +48,6 @@
                 <toc-element toc-title="Volume 1 (100-199)">
                     <toc-element topic="ACM-Solution-UVA-123.md"/>
                 </toc-element>
-
                 <toc-element toc-title="Volume 3 (300-399)">
                     <toc-element topic="ACM-Solution-UVA-358.md"/>
                     <toc-element topic="ACM-Solution-UVA-391.md"/>
@@ -123,6 +101,10 @@
                 </toc-element>
             </toc-element>
 
+            <toc-element toc-title="Kattis">
+                <toc-element topic="ACM-Solution-Kattis-ballotboxes.md"/>
+            </toc-element>
+
             <toc-element toc-title="HDU">
                 <toc-element topic="ACM-Solution-HDU-1029.md"/>
                 <toc-element topic="ACM-Solution-HDU-2072.md"/>
@@ -132,6 +114,27 @@
             <toc-element toc-title="POJ">
                 <toc-element topic="ACM-Solution-POJ-1064.md"/>
                 <toc-element topic="ACM-Solution-POJ-2456.md"/>
+            </toc-element>
+
+            <toc-element toc-title="LeetCode">
+                <toc-element topic="ACM-题解-LeetCode-17.md"/>
+                <toc-element topic="ACM-题解-LeetCode-36.md"/>
+                <toc-element topic="ACM-题解-LeetCode-64.md"/>
+                <toc-element topic="ACM-题解-LeetCode-1014.md"/>
+                <toc-element topic="ACM-题解-LeetCode-1436.md"/>
+                <toc-element topic="ACM-题解-LeetCode-1845.md"/>
+                <toc-element topic="ACM-题解-LeetCode-2073.md"/>
+                <toc-element topic="ACM-题解-LeetCode-2181.md"/>
+                <toc-element topic="ACM-题解-LeetCode-2207.md"/>
+                <toc-element topic="ACM-题解-LeetCode-2306.md"/>
+                <toc-element topic="ACM-题解-LeetCode-2516.md"/>
+                <toc-element topic="ACM-题解-LeetCode-2535.md"/>
+                <toc-element topic="ACM-题解-LeetCode-2552.md"/>
+                <toc-element topic="ACM-题解-LeetCode-2576.md"/>
+                <toc-element topic="ACM-题解-LeetCode-2708.md"/>
+                <toc-element topic="ACM-题解-LeetCode-2856.md"/>
+                <toc-element topic="ACM-题解-LeetCode-2860.md"/>
+                <toc-element topic="ACM-题解-LeetCode-3174.md"/>
             </toc-element>
         </toc-element>
 
