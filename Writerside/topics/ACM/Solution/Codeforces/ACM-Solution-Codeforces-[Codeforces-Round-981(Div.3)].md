@@ -776,3 +776,345 @@ int main() {
 ```
 
 <br/>
+
+## G. Sakurako and Chefir
+
+[原题地址](https://codeforces.com/contest/2033/problem/G)
+
+### 🏷️ 题目类型
+
+树、线段树、贪心
+
+### 📜 题目
+
+**题意**
+
+给定一棵以顶点 $1$ 为根的有 $n$ 个顶点的树。当樱子和她的猫谢菲尔一起在树中散步时，樱子分心了，谢菲尔跑掉了。
+
+为了帮助樱子，小介记录了他的 $q$ 个猜测。在第 $i$ 次猜测中，他假设谢菲尔在顶点 $v_{i}$ 迷路了，并且有 $k_{i}$ 点耐力。
+
+此外，对于每个猜测，小介假设谢菲尔可以沿着边任意次数移动：
+
+- 从顶点 $a$ 到顶点 $b$，如果 $a$ 是 $b$ 的祖先∗，耐力不会改变；
+
+- 从顶点 $a$ 到顶点 $b$，如果 $a$ 不是 $b$ 的祖先，那么谢菲尔的耐力减少 $1$ 。
+
+如果谢菲尔的耐力为 $0$ ，他就不能进行第二种类型的移动。
+
+对于每个假设，您的任务是找到从顶点 $v_{i}$ 出发，拥有 $k_{i}$ 点耐力的情况下，谢菲尔能够到达的最远顶点的距离。
+
+**∗** 如果从 $b$ 到根的最短路径经过 $a$ ，则顶点 $a$ 是顶点 $b$ 的祖先。
+
+**输入**
+
+第一行包含一个整数 $t$ （$1 \leq t \leq 10^{4}$）  — 测试用例的数量。
+
+每个测试用例的描述如下：
+
+- 第一行包含一个整数 $n$ （$2 \leq n \leq 2 \cdot 10^{5}$）  — 树中的顶点数量。
+
+- 接下来的 $n - 1$ 行包含树的边。保证给定的边构成一棵树。
+
+- 下一行由一个整数 $q$ （$1 \cdot q \cdot 2 \cdot 10^{5}$）组成，它表示小介做出的猜测数量。
+
+- 接下来的 $q$ 行描述了小介做出的猜测，有两个整数 $v_{i}$ 、 $k_{i}$ （$1 \leq v_{i} \leq n$，$0 \leq k_{i} \leq n$）。
+
+保证所有测试用例中 $n$ 的总和以及 $q$ 的总和不超过 $2 \cdot 10^{5}$ 。
+
+**输出**
+
+对于每个测试用例和每次猜测，输出从起始点 $v_{i}$ 出发，在拥有 $k_{i}$ 耐力的情况下，Chefir 能够到达的最远顶点的最大距离。
+
+**样例输入**
+
+```text
+3
+5
+1 2
+2 3
+3 4
+3 5
+3
+5 1
+3 1
+2 0
+9
+8 1
+1 7
+1 4
+7 3
+4 9
+3 2
+1 5
+3 6
+7
+6 0
+2 3
+6 2
+8 2
+2 4
+9 2
+6 3
+6
+2 1
+2 5
+2 4
+5 6
+4 3
+3
+3 1
+1 3
+6 5
+```
+
+**样例输出**
+
+```text
+2 1 2 
+0 5 2 4 5 5 5 
+1 3 4 
+```
+
+### 🔍 分析
+
+根据题意可以知道在树上有两种移动方式： 
+
+- 向下移动（不消耗体力）
+- 向上移动（每移动一步消耗一点体力）
+
+下图是从节点 $3$ 向下移动到节点 $15$，移动路径：$3 \rightarrow 6 \rightarrow 10 \rightarrow 15$
+
+![ACM-Solution-Codeforces-CF2033G-01.png](ACM-Solution-Codeforces-CF2033G-01.png)
+
+下图是从节点 $3$ 向上移动到节点 $1$，移动路径：$3 \rightarrow 1$
+
+![ACM-Solution-Codeforces-CF2033G-02.png](ACM-Solution-Codeforces-CF2033G-02.png)
+
+
+因为向下移动不消耗体力，所以一定可以从当前节点移动到该节点所在子树的最深的叶节点。也可以使用体力向上移动后再往下移动。
+
+那么对于节点 $10$ 来说就有以下移动路径
+
+向下移动：
+
+- $10 \rightarrow 15$
+- $10 \rightarrow 14$
+
+向上后再向下移动：
+
+- $10  \rightarrow  6  \rightarrow 9 \rightarrow 13$
+- $10  \rightarrow  6  \rightarrow 3 \rightarrow 5 \rightarrow 8 \rightarrow 12 \rightarrow 17$
+- $10  \rightarrow  6  \rightarrow 3 \rightarrow 1 \rightarrow 2 \rightarrow 4 \rightarrow 7 \rightarrow 11 \rightarrow 16$
+
+![ACM-Solution-Codeforces-CF2033G-03.png](ACM-Solution-Codeforces-CF2033G-03.png)
+
+而想要起始节点和最后到达节点相距最远，就需要选以上路径中移动最远的那个，即 $15 \rightarrow 16$ 这条路径。
+
+将问题一般化，假设 $maxDepth[u]$ 表示节点 $u$ 可以向下移动的最大距离，
+那么从节点 $u$ 向上移动 $i$ 个节点可以到达的最大距离即 $i + maxDepth[u + i]$。
+若有 $k$ 点体力，那么从节点 $u$ 出发可以移动的最远距离为：
+$max\{maxDepth[u], ~ 1 + maxDepth[u + 1], ~ 2 + maxDepth[u + 2],  ~\cdots,~ k + maxDepth[u + k] \}$
+
+若每次枚举向上的 $k$ 个节点，那么单次查询的最坏时间复杂度为 $O(k)$，无法接受。接下来考虑如何优化，假设 $depth[u]$ 表示当前节点所在的深度，
+那么我们每次枚举的都是一条链上 $depth[u] ~ depth[u + k]$ 之间的点的 $maxDepth$。此时发现在同一条链上的所有查询，所枚举的点的范围是存在重叠的，
+那么我们可以先将查询离线出来，对树上的每条链构建线段树，维护区间的最大 $maxDepth$，然后 DFS 遍历所有点，若该节点上存在查询，则在线段树中进行查询。
+在遍历完一条链后，在回溯时可以重置一下当前节点在线段树中的值，这样就只需要一颗线段树。这样对于单次查询时间复杂度只需要 $O(\log{n})$。
+
+PS:
+
+![ACM-Solution-Codeforces-CF2033G-04.png](ACM-Solution-Codeforces-CF2033G-04.png)
+
+从节点 $10$ 向上走到节点 $3$ 后再向下走到 节点 $17$ 的距离为：
+
+$depth[10] + maxDepth[3] - depth[3]$
+
+将这个一般化，假设从节点 $s$ 向上走到节点 $u$ 再向下走到节点 $e$ 的距离为
+
+$depth[s] + maxDepth[u] - depth[u]$
+
+所以在线段树中维护的是 $maxDepth[u] - depth[u]$ 的最大值！
+
+
+### 💡 代码
+
+```C++
+//
+// Created by Luminous on 2024/10/31.
+// https://codeforces.com/contest/2033/problem/G
+//
+
+#pragma GCC optimize(3)
+
+#include <bits/stdc++.h>
+using namespace std;
+
+#define endl "\n"
+
+
+const int MAX_N = 2e5 + 10;
+
+struct Query {
+    int k;
+    int id;
+};
+
+struct SegmentTree {
+    int n;
+    int *C;
+
+    explicit SegmentTree(int n) {
+        this->n = (n + 10) << 2;
+        C = (int *) malloc(sizeof(int) * this->n);
+    }
+
+    void pushUp(int root) {
+        C[root] = max(C[root << 1], C[root << 1 | 1]);
+    }
+
+    void build(int l, int r, int root) {
+        if (l == r) {
+            C[root] = INT_MIN;
+        } else {
+            int mid = l + r >> 1;
+            build(l, mid, root << 1);
+            build(mid + 1, r, root << 1 | 1);
+            pushUp(root);
+        }
+    }
+
+    void update(int k, int v, int l, int r, int root) {
+        if (l == r) {
+            C[root] = v;
+            return;
+        }
+
+        int mid = l + r >> 1;
+        if (k <= mid) {
+            update(k, v, l, mid, root << 1);
+        } else {
+            update(k, v, mid + 1, r, root << 1 | 1);
+        }
+
+        pushUp(root);
+    }
+
+    int query(int L, int R, int l, int r, int root) {
+        if (L <= l && r <= R) {
+            return C[root];
+        }
+
+        int res = INT_MIN;
+        int mid = l + r >> 1;
+        if (L <= mid) {
+            res = max(res, query(L, R, l, mid, root << 1));
+        }
+        if (mid < R) {
+            res = max(res, query(L, R, mid + 1, r, root << 1 | 1));
+        }
+
+        return res;
+    }
+};
+
+vector<int> edge[MAX_N];
+int depth[MAX_N];
+int maxDepth[MAX_N];
+vector<Query> query[MAX_N];
+int ans[MAX_N];
+
+void init(int n) {
+    for (int i = 0; i < n + 10; i++) {
+        edge[i].clear();
+        depth[i] = 0;
+        maxDepth[i] = 0;
+        query[i].clear();
+    }
+}
+
+void getDepth(int u, int fa) {
+    for (int v: edge[u]) {
+        if (v == fa) continue;
+        depth[v] = depth[u] + 1;
+        getDepth(v, u);
+        maxDepth[u] = max(maxDepth[u], maxDepth[v] + 1);
+    }
+}
+
+void dfs(int u, int fa, int n, SegmentTree &segTree) {
+    for (auto &[k, id]: query[u]) {
+        int dis = segTree.query(max(0, depth[u] - k), depth[u], 0, n - 1, 1) + depth[u];
+        ans[id] = max(maxDepth[u], dis);
+    }
+
+    int max1 = 0, max2 = 0;
+    for (int v : edge[u]) {
+        if (v == fa) continue;
+
+        if (maxDepth[v] + 1 > max1) {
+            max2 = max1;
+            max1 = maxDepth[v] + 1;
+        } else if (maxDepth[v] + 1 > max2) {
+            max2 = maxDepth[v] + 1;
+        }
+    }
+
+    for (int v: edge[u]) {
+        if (v == fa) continue;
+
+        int d = maxDepth[v] + 1 == max1 ? max2 : max1;
+        segTree.update(depth[u], d - depth[u], 0, n - 1, 1);
+
+        dfs(v, u, n, segTree);
+        segTree.update(depth[u], INT_MIN, 0, n - 1, 1);
+    }
+}
+
+void solve() {
+    int n;
+    cin >> n;
+
+    init(n);
+
+    for (int i = 0; i < n - 1; i++) {
+        int u, v;
+        cin >> u >> v;
+        edge[u].push_back(v);
+        edge[v].push_back(u);
+    }
+
+    int q;
+    cin >> q;
+    for (int i = 0; i < q; i++) {
+        int v, k;
+        cin >> v >> k;
+        query[v].push_back({k, i});
+    }
+
+    getDepth(1, 0);
+
+    SegmentTree segTree(n);
+    segTree.build(0, n - 1, 1);
+
+    dfs(1, 0, n, segTree);
+
+    for (int i = 0; i < q; i++) {
+        cout << ans[i] << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+
+    ios::sync_with_stdio(false);
+
+    int T = 1;
+    cin >> T;
+    while (T-- > 0) {
+        solve();
+    }
+
+    return 0;
+}
+```
+
+<br/>
